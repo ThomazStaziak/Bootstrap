@@ -29,11 +29,10 @@ body{
 .main-nav ul{
   padding: 0;
   margin: 0;
-  display: flex;
+  flex-wrap: nowrap;
 }
 
 .main-nav li{
-  flex-wrap: nowrap;
   padding: 10px 0;
   margin:0 25px 1px 0px;
   list-style: none;
