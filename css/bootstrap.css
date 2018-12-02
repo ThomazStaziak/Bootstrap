@@ -1,38 +1,46 @@
-@media (min-width: 992px) {
-  .main-footer ul{
-    padding: 35px 35px 30px 35px !important;
-    background-color: #b62322;
-    border-radius: 15px 15px 0 0;
-    font-size: 0.8em;
-  }
-  .main-footer .borda{
-    background-color: transparent !important;
-    border-right: 1px solid #fff;
-  }
-}
+/**
+* Common Area *
+**/
 
-body{
+body {
   background-image: url(../images/bg-body.png);
 }
 
-.logo{
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+/**
+* Header Area *
+**/
+
+.logo {
   margin:30px auto;
   border: 1px solid #000;
   border-radius: 100%;
 }
 
-.banner{
+.banner {
   padding: 0;
   margin-top: 30px;
 }
 
-.main-nav ul{
+.main-nav ul {
   padding: 0;
   margin: 0;
   flex-wrap: nowrap;
 }
 
-.main-nav li{
+.main-nav li {
   padding: 10px 0;
   margin:0 25px 1px 0px;
   list-style: none;
@@ -41,51 +49,68 @@ body{
   width: 15%;
 }
 
-.margin-none{
-  margin: 0 !important;
+/**
+* Product Area *
+**/
+
+.product {
+  margin-top: 30px;
 }
 
-.main-footer ul{
+.product img {
+  padding: 0;
+}
+
+.product a {
+  background-color: #323332;
+  padding: 8px;
+}
+
+/**
+* Footer Area *
+**/
+
+.main-footer ul {
   padding: 0;
   margin: 0;
 }
 
-.main-footer li{
+.main-footer li {
   margin-bottom: 1px;
   background-color: #b62322;
   list-style: none;
   text-transform: uppercase;
 }
 
-.main-footer{
+.main-footer {
   margin-top: 30px;
 }
 
-a{
-  color: #fff;
+/**
+* Breakpoint Area *
+**/
+
+@media (min-width: 992px)  {
+  .main-footer ul {
+    padding: 35px 35px 30px 35px !important;
+    background-color: #b62322;
+    border-radius: 15px 15px 0 0;
+    font-size: 0.8em;
+  }
+  .main-footer .borda {
+    background-color: transparent !important;
+    border-right: 1px solid #fff;
+  }
 }
 
-.product{
-  margin-top: 30px;
-}
-
-.product img{
-  padding: 0;
-}
-
-.product a{
-  background-color: #323332;
-  padding: 8px;
-}
-
-@media (max-width: 765px) {
-  .banner{
+@media (max-width: 765px)  {
+  .banner {
     display: none;
   }
-  .main-nav ul{
+  .main-nav ul {
     display: block;
   }
-  .main-nav li {
+  .main-nav li  {
     width: 100% !important;
   }
 }
